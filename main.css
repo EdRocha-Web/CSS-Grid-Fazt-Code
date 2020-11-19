@@ -1,0 +1,70 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+
+    align-items: stretch;
+}
+
+.element1{
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+.element2{
+    grid-column: 1/2;
+}
+
+.element3{
+    grid-column: 2/4;
+}
+
+/*Esto decidí comentarisarlo ya que el ajtor lo elimino y si lo dejaba así se podría pensar 
+que no lo hice, además de que se vería muy pobre el código*/
+
+/* .element1{
+    align-self: start;
+}
+
+.element2{
+    align-self: center;
+}
+
+.element3{
+    align-self: flex-end;
+}
+
+.element4{
+    justify-self: start;
+}
+
+.element5{
+    justify-self: center;
+}
+
+.element6{
+    justify-self: end;
+} */
+/* .nested-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 1em;
+}
+
+.nested-grid > div{
+    border: 1px solid #000000;
+    background: #f1c40f;
+    padding: 1em;
+} */
+
+.grid > div{
+    background: #ecf0f1;
+    padding: 1em;
+}
+
+div:hover{
+    border: 1px solid #f1c40f;
+}
+
